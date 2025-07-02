@@ -26,7 +26,7 @@ class Program
                 var buffer = new byte[1024];
                 var bytesRead = stream.Read(buffer, 0, buffer.Length);
                 var message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                Console.WriteLine($"Bekam message: {message}");
+                Console.WriteLine($"Bekam message: {message} 'Änderungen von githubTest-1'");
 
                 var response = $"server bekam message: {message}";
                 var responseData = Encoding.UTF8.GetBytes(response);
