@@ -6,11 +6,11 @@ class Client
 {
     static void Main()
     {
-        using (var client = new TcpClient("localhost", 12345))
+        using (var client = new TcpClient("localhost", 12344))
         using (var stream = client.GetStream())
         {
 
-            var message = "Hallo, server!";
+            var message = "Hallo 'Dringende Änerungen von githubTest#3', server!";
             var data = Encoding.UTF8.GetBytes(message);
             stream.Write(data, 0, data.Length);
 
