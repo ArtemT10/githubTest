@@ -10,7 +10,7 @@ class Client
         using (var stream = client.GetStream())
         {
 
-            var message = "Hallo 'Dringende Änerungen von githubTest#3', server!";
+            var message = "Hallo 'Dringende Änerungen von githubTest#3', server, Message2!";
             var data = Encoding.UTF8.GetBytes(message);
             stream.Write(data, 0, data.Length);
 
